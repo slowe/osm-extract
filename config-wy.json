@@ -2,7 +2,7 @@
 	"area": "great-britain/england/west-yorkshire",
 	"pbf": "https://download.geofabrik.de/europe/great-britain/england/west-yorkshire-latest.osm.pbf",
 	"updates": "download.geofabrik.de/europe/great-britain/england/west-yorkshire-updates",
-	"temp": "temp-wy/",
+	"temp": "temp/",
 	"areas": {
 		"horsforth": {
 			"name": "Horsforth",
