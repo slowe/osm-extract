@@ -6,3 +6,5 @@ git add layers/horsforth/*.geojson
 git commit -m "Update Horsforth"
 git push
 git gc
+
+./home/pi/shutdown.py
