@@ -1,0 +1,38 @@
+{
+	"area": "great-britain/england/west-yorkshire",
+	"pbf": "https://download.geofabrik.de/europe/great-britain/england/west-yorkshire-latest.osm.pbf",
+	"updates": "download.geofabrik.de/europe/great-britain/england/west-yorkshire-updates",
+	"temp": "temp-wy/",
+	"areas": {
+		"horsforth": {
+			"name": "Horsforth",
+			"poly": "area-horsforth.poly",
+			"layers": {
+				"parking": {
+					"keep": "amenity=parking"
+				},
+				"shop": {
+					"keep": "shop="
+				},
+				"atm": {
+					"keep": "amenity=atm"
+				},
+				"bank": {
+					"keep": "amenity=bank"
+				},
+				"pub": {
+					"keep": "amenity=bar or amenity=pub"
+				},
+				"food": {
+					"keep": "amenity=fast_food or amenity=restaurant or amenity=cafe"
+				},
+				"charging": {
+					"keep": "amenity=charging_station"
+				},
+				"childcare": {
+					"keep": "amenity=childcare"
+				}
+			}
+		}
+	}
+}
