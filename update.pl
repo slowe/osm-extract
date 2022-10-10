@@ -18,11 +18,14 @@ $name =~ s/\//\_/g;
 
 $url = $config->{'pbf'};
 $updateurl = $config->{'updates'};
+$tdir = $config->{'temp'};
+
 $latest = $url;
 $latest =~ s/^.*\/([^\/]+)(\.osm\.pbf)$/$1$2/g;
+$latest = $tdir.$latest;
 $old = $latest;
 $old =~ s/\.osm/-old\.osm/;
-$tdir = $config->{'temp'};
+
 
 
 
@@ -62,17 +65,16 @@ if(-e $latest){
 		if(!-e $config->{'areas'}{$a}{'poly'}){
 			error("No polygon file $config->{'areas'}{$a}{'poly'}\n");
 		}
-		$arealatest = $a."-latest.o5m";
+		$arealatest = $tdir.$a."-latest.o5m";
 		# Make area extract
 		`osmconvert $latest -B=$config->{'areas'}{$a}{'poly'} -o=$arealatest`;
 		
 
 		foreach $l (keys(%{$config->{'areas'}{$a}{'layers'}})){
 			print "layer $l\n";
-			print Dumper $config->{'areas'}{$a}{'layers'}{$l};
 
 			# Extract layer
-			$layer = $a."-$l.osm";
+			$layer = $tdir.$a."-$l.osm";
 			`osmfilter $arealatest --keep="$config->{'areas'}{$a}{'layers'}{$l}{'keep'}" -o=$layer`;
 			if(!-d "layers"){
 				`mkdir layers`;
