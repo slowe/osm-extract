@@ -79,7 +79,13 @@ if(-e $latest){
 			if(!-d "layers"){
 				`mkdir layers`;
 			}
-			$geojson = "layers/".$a."-$l.geojson";
+
+			$ldir = "layers/".$a."/";
+			if(!-d $ldir){
+				`mkdir $ldir`;
+			}
+
+			$geojson = $ldir.$a."-$l.geojson";
 			saveGeoJSONFeatures($layer,$geojson);
 			`rm $layer`;
 		}
