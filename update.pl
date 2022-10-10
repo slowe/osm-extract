@@ -4,12 +4,21 @@ use POSIX qw(strftime);
 use JSON::XS;
 use Data::Dumper;
 
+
+use Cwd qw(abs_path);
+
+# Get the real base directory for this script
+my $basedir = "./";
+if(abs_path($0) =~ /^(.*\/)[^\/]*/){ $basedir = $1; }
+
+
 $coder = JSON::XS->new->ascii->allow_nonref;
 
-$config = loadConf($ARGV[0]||"config-wy.json");
+$config = loadConf($ARGV[0]||$basedir."config-wy.json");
 
 
-
+print Dumper $config;
+exit;
 
 
 $area = $config->{'area'};
