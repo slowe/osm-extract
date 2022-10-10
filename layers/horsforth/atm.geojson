@@ -1,0 +1,7 @@
+{"features":[
+	{"geometry":{"coordinates":[-1.6331322,53.846688],"type":"Point"},"properties":{"amenity":"atm","osm_id":"1938631973","other_tags":{"fee":"no","operator":"Tesco Bank"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.6403145,53.8319064],"type":"Point"},"properties":{"amenity":"atm","osm_id":"3904815772","other_tags":{"drive_through":"no","opening_hours":"24/7","operator":"Tesco Bank"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.6409055,53.8375549],"type":"Point"},"properties":{"amenity":"atm","name":"Virgin Money","osm_id":"5642157014","other_tags":{"brand":"Virgin Money","brand:wikidata":"Q2527746","brand:wikipedia":"en:Virgin Money UK","drive_through":"no","operator":"Virgin Money","operator:wikidata":"Q2527746","operator:wikipedia":"en:Virgin Money UK"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.6407344,53.8376399],"type":"Point"},"properties":{"amenity":"atm","osm_id":"5642157015","other_tags":{"check_date":"2021-08-30","operator":"Halifax"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.6387999,53.8391116],"type":"Point"},"properties":{"amenity":"atm","osm_id":"8331307289","other_tags":{"brand":"HSBC UK","brand:wikidata":"Q64767453","cash_in":"no","currency:GBP":"yes","drive_through":"no","operator":"HSBC UK","operator:wikidata":"Q64767453"}},"type":"Feature"}
+],"type":"FeatureCollection"}
