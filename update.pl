@@ -17,17 +17,13 @@ $coder = JSON::XS->new->ascii->allow_nonref;
 $config = loadConf($ARGV[0]||$basedir."config-wy.json");
 
 
-print Dumper $config;
-exit;
-
-
 $area = $config->{'area'};
 $name = $area;
 $name =~ s/\//\_/g;
 
 $url = $config->{'pbf'};
 $updateurl = $config->{'updates'};
-$tdir = $config->{'temp'};
+$tdir = $basedir.$config->{'temp'};
 
 $latest = $url;
 $latest =~ s/^.*\/([^\/]+)(\.osm\.pbf)$/$1$2/g;
@@ -71,12 +67,13 @@ if(-e $latest){
 
 		print "$a:\n";
 				
-		if(!-e $config->{'areas'}{$a}{'poly'}){
+		if(!-e $basedir.$config->{'areas'}{$a}{'poly'}){
 			error("No polygon file $config->{'areas'}{$a}{'poly'}\n");
 		}
 		$arealatest = $tdir.$a."-latest.o5m";
 		# Make area extract
-		`osmconvert $latest -B=$config->{'areas'}{$a}{'poly'} -o=$arealatest`;
+		print "OSM convert $arealatest.\n";
+		`osmconvert $latest -B=$basedir$config->{'areas'}{$a}{'poly'} -o=$arealatest`;
 		
 
 		foreach $l (keys(%{$config->{'areas'}{$a}{'layers'}})){
@@ -84,18 +81,22 @@ if(-e $latest){
 
 			# Extract layer
 			$layer = $tdir.$a."-$l.osm";
+
 			`osmfilter $arealatest --keep="$config->{'areas'}{$a}{'layers'}{$l}{'keep'}" -o=$layer`;
-			if(!-d "layers"){
-				`mkdir layers`;
+			$ldir = $basedir."layers/";
+			if(!-d $ldir){
+				`mkdir $ldir`;
 			}
 
-			$ldir = "layers/".$a."/";
+			$ldir .= $a."/";
 			if(!-d $ldir){
 				`mkdir $ldir`;
 			}
 
 			$geojson = $ldir."$l.geojson";
+
 			saveGeoJSONFeatures($layer,$geojson);
+			print "Remove $layer ";
 			`rm $layer`;
 		}
 		`rm $arealatest`;
@@ -111,10 +112,13 @@ exit;
 
 sub saveGeoJSONFeatures {
 
-	my (@types,@features,$t,@lines,$perl_scalar,$n,$i,$geojson,$txt);
+	my (@types,@features,$t,@lines,$perl_scalar,$n,$i,$geojson,$txt,$bdir,$ini);
 	
 	my $osm = $_[0];
 	my $ofile = $_[1];
+
+	$bdir = $osm;
+	$bdir =~ s/([^\/]+)$//;
 	
 	# Extract each feature type as GeoJSON
 	@types = ('points','lines','multilinestrings','multipolygons','other_relations');
@@ -122,8 +126,9 @@ sub saveGeoJSONFeatures {
 	@features = ();
 
 	foreach $t (@types){
-		$gfile = "temp-$t.geojson";
-		`ogr2ogr -overwrite --config OSM_CONFIG_FILE osmconf.ini -skipfailures -f GeoJSON $gfile $osm $t`;
+		$gfile = $bdir."temp-$t.geojson";
+		$ini = $basedir."osmconf.ini";
+		`ogr2ogr -overwrite --config OSM_CONFIG_FILE $ini -skipfailures -f GeoJSON $gfile $osm $t`;
 		open(FILE,$gfile);
 		@lines = <FILE>;
 		close(FILE);
