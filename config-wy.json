@@ -31,6 +31,9 @@
 				},
 				"childcare": {
 					"keep": "amenity=childcare"
+				},
+				"recycling": {
+					"keep": "amenity=recycling"
 				}
 			}
 		}
