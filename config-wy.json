@@ -17,6 +17,9 @@
 				"atm": {
 					"keep": "amenity=atm"
 				},
+				"bicycle": {
+					"keep": "amenity=bicycle_parking"
+				},
 				"bank": {
 					"keep": "amenity=bank"
 				},
@@ -26,14 +29,56 @@
 				"food": {
 					"keep": "amenity=fast_food or amenity=restaurant or amenity=cafe"
 				},
+				"car-sharing": {
+					"keep": "amenity=car_sharing"
+				},
 				"charging": {
 					"keep": "amenity=charging_station"
 				},
 				"childcare": {
 					"keep": "amenity=childcare"
 				},
+				"gritbins": {
+					"keep": "amenity=grit_bin"
+				},
+				"gym": {
+					"keep": "leisure=fitness_centre"
+				},
+				"legal": {
+					"keep": "office=lawyer or office=accountant or office=tax_advisor"
+				},
+				"medical": {
+					"keep": "amenity=clinic or amenity=doctors or amenity=dentist or amenity=pharmacy"
+				},
+				"postbox": {
+					"keep": "amenity=post_box"
+				},
 				"recycling": {
 					"keep": "amenity=recycling"
+				},
+				"parks": {
+					"keep": "leisure=park"
+				},
+				"hairdressers": {
+					"keep": "shop=hairdresser"
+				},
+				"education": {
+					"keep": "amenity=school or amenity=college or amenity=university"
+				},
+				"worship": {
+					"keep": "amenity=place_of_worship"
+				},
+				"toilets": {
+					"keep": "amenity=toilets"
+				},
+				"therapist": {
+					"keep": "office=therapist"
+				},
+				"travelagent": {
+					"keep": "office=travelagent"
+				},
+				"vets": {
+					"keep": "amenity=veterinary"
 				}
 			}
 		}
