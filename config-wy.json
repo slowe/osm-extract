@@ -70,13 +70,13 @@
 					"keep": "amenity=place_of_worship"
 				},
 				"toilets": {
-					"keep": "amenity=toilets"
+					"keep": "amenity=toilets toilets=yes"
 				},
 				"therapist": {
-					"keep": "office=therapist"
+					"keep": "office=therapist healthcare=physiotherapist healthcare=psychotherapist healthcare=occupational_therapist healthcare=speech_therapist"
 				},
 				"travelagent": {
-					"keep": "office=travelagent"
+					"keep": "office=travelagent shop=travel_agency"
 				},
 				"vets": {
 					"keep": "amenity=veterinary"
