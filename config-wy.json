@@ -64,7 +64,7 @@
 				},
 				"education": {
 					"keep": "amenity=school =college =university",
-					"drop": "barrier=gate"
+					"drop": "barrier=gate =bollard entrance=yes"
 				},
 				"worship": {
 					"keep": "amenity=place_of_worship"
