@@ -81,8 +81,12 @@ if(-e $latest){
 
 			# Extract layer
 			$layer = $tdir.$a."-$l.osm";
+			
+			$modify = "";
+			if($config->{'areas'}{$a}{'layers'}{$l}{'keep'}){ $modify .= " --keep=\"$config->{'areas'}{$a}{'layers'}{$l}{'keep'}\""; }
+			if($config->{'areas'}{$a}{'layers'}{$l}{'drop'}){ $modify .= " --drop=\"$config->{'areas'}{$a}{'layers'}{$l}{'drop'}\""; }
 
-			`osmfilter $arealatest --keep="$config->{'areas'}{$a}{'layers'}{$l}{'keep'}" -o=$layer`;
+			`osmfilter $arealatest $modify -o=$layer`;
 			$ldir = $basedir."layers/";
 			if(!-d $ldir){
 				`mkdir $ldir`;

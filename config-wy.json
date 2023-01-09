@@ -63,7 +63,8 @@
 					"keep": "shop=hairdresser"
 				},
 				"education": {
-					"keep": "amenity=school or amenity=college or amenity=university"
+					"keep": "amenity=school =college =university",
+					"drop": "barrier=gate"
 				},
 				"worship": {
 					"keep": "amenity=place_of_worship"
