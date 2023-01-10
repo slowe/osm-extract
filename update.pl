@@ -25,6 +25,10 @@ $url = $config->{'pbf'};
 $updateurl = $config->{'updates'};
 $tdir = $basedir.$config->{'temp'};
 
+if(!-d $tdir){
+	`mkdir $tdir`;
+}
+
 $latest = $url;
 $latest =~ s/^.*\/([^\/]+)(\.osm\.pbf)$/$1$2/g;
 $latest = $tdir.$latest;
@@ -35,7 +39,7 @@ $old =~ s/\.osm/-old\.osm/;
 
 
 if(!-e $latest){
-	print "Download file from $url\n";
+	print "Download file from $url to $latest\n";
 	`wget -O $latest "$url"`;
 }
 
