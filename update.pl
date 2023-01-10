@@ -40,7 +40,7 @@ $old =~ s/\.osm/-old\.osm/;
 
 if(!-e $latest){
 	print "Download file from $url to $latest\n";
-	`wget -O $latest "$url"`;
+	`wget -q --no-check-certificate -O $latest "$url"`;
 }
 
 if(-e $latest){
