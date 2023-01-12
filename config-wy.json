@@ -38,11 +38,18 @@
 				"childcare": {
 					"keep": "amenity=childcare"
 				},
+				"education": {
+					"keep": "amenity=school =college =university",
+					"drop": "barrier=gate =bollard entrance=yes"
+				},
 				"gritbins": {
 					"keep": "amenity=grit_bin"
 				},
 				"gym": {
 					"keep": "leisure=fitness_centre"
+				},
+				"hairdressers": {
+					"keep": "shop=hairdresser"
 				},
 				"legal": {
 					"keep": "office=lawyer or office=accountant or office=tax_advisor"
@@ -50,27 +57,18 @@
 				"medical": {
 					"keep": "amenity=clinic or amenity=doctors or amenity=dentist or amenity=pharmacy"
 				},
+				"parks": {
+					"keep": "leisure=park"
+				},
 				"postbox": {
 					"keep": "amenity=post_box"
 				},
 				"recycling": {
 					"keep": "amenity=recycling"
 				},
-				"parks": {
-					"keep": "leisure=park"
-				},
-				"hairdressers": {
-					"keep": "shop=hairdresser"
-				},
-				"education": {
-					"keep": "amenity=school =college =university",
-					"drop": "barrier=gate =bollard entrance=yes"
-				},
-				"worship": {
-					"keep": "amenity=place_of_worship"
-				},
 				"toilets": {
-					"keep": "amenity=toilets toilets=yes"
+					"keep": "amenity=toilets toilets=yes",
+					"drop": "entrance=main =yes"
 				},
 				"therapist": {
 					"keep": "office=therapist healthcare=physiotherapist healthcare=psychotherapist healthcare=occupational_therapist healthcare=speech_therapist"
@@ -80,6 +78,9 @@
 				},
 				"vets": {
 					"keep": "amenity=veterinary"
+				},
+				"worship": {
+					"keep": "amenity=place_of_worship"
 				}
 			}
 		}
