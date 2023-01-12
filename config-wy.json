@@ -8,12 +8,6 @@
 			"name": "Horsforth",
 			"poly": "area-horsforth.poly",
 			"layers": {
-				"parking": {
-					"keep": "amenity=parking"
-				},
-				"shop": {
-					"keep": "shop="
-				},
 				"atm": {
 					"keep": "amenity=atm"
 				},
@@ -57,6 +51,9 @@
 				"medical": {
 					"keep": "amenity=clinic or amenity=doctors or amenity=dentist or amenity=pharmacy"
 				},
+				"parking": {
+					"keep": "amenity=parking"
+				},
 				"parks": {
 					"keep": "leisure=park"
 				},
@@ -65,6 +62,10 @@
 				},
 				"recycling": {
 					"keep": "amenity=recycling"
+				},
+				"shop": {
+					"keep": "shop=",
+					"drop": "shop=hairdresser =travel_agency"
 				},
 				"toilets": {
 					"keep": "amenity=toilets toilets=yes",
