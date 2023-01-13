@@ -11,8 +11,14 @@
 				"atm": {
 					"keep": "amenity=atm"
 				},
+				"bakery": {
+					"keep": "shop=bakery"
+				},
 				"bicycle": {
 					"keep": "amenity=bicycle_parking"
+				},
+				"beauty": {
+					"keep": "shop=beauty"
 				},
 				"bank": {
 					"keep": "amenity=bank"
@@ -29,8 +35,14 @@
 				"charging": {
 					"keep": "amenity=charging_station"
 				},
+				"charity": {
+					"keep": "shop=charity"
+				},
 				"childcare": {
 					"keep": "amenity=childcare"
+				},
+				"clothing": {
+					"keep": "shop=clothes"
 				},
 				"education": {
 					"keep": "amenity=school =college =university",
@@ -65,7 +77,7 @@
 				},
 				"shop": {
 					"keep": "shop=",
-					"drop": "shop=hairdresser =travel_agency"
+					"drop": "shop=hairdresser =travel_agency =beauty =clothes =charity =bakery entrance=main"
 				},
 				"toilets": {
 					"keep": "amenity=toilets toilets=yes",
