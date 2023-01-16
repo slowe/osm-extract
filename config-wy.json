@@ -29,6 +29,9 @@
 				"food": {
 					"keep": "amenity=fast_food or amenity=restaurant or amenity=cafe"
 				},
+				"car": {
+					"keep": "shop=car =car_parts =car_repair"
+				},
 				"car-sharing": {
 					"keep": "amenity=car_sharing"
 				},
@@ -77,7 +80,7 @@
 				},
 				"shop": {
 					"keep": "shop=",
-					"drop": "shop=hairdresser =travel_agency =beauty =clothes =charity =bakery entrance=main"
+					"drop": "shop=hairdresser =travel_agency =beauty =clothes =charity =bakery =car =car_parts =car_repair =vacant entrance=main"
 				},
 				"toilets": {
 					"keep": "amenity=toilets toilets=yes",
@@ -88,6 +91,9 @@
 				},
 				"travelagent": {
 					"keep": "office=travelagent shop=travel_agency"
+				},
+				"vacant": {
+					"keep": "shop=vacant"
 				},
 				"vets": {
 					"keep": "amenity=veterinary"
