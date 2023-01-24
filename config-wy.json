@@ -23,6 +23,9 @@
 				"bank": {
 					"keep": "amenity=bank"
 				},
+				"craft": {
+					"keep": "craft="
+				},
 				"pub": {
 					"keep": "amenity=bar or amenity=pub"
 				},
