@@ -1,4 +1,4 @@
 {"features":[
 	{"geometry":{"coordinates":[-1.6416813,53.8373208],"type":"Point"},"properties":{"name":"Spider Pie","osm_id":"3886297916","other_tags":{"addr:city":"Leeds","addr:housenumber":"23","addr:postcode":"LS18 5LJ","addr:street":"Town Street","addr:suburb":"Horsforth","shop":"vacant"}},"type":"Feature"},
 	{"geometry":{"coordinates":[[[[-1.6416485,53.8373015],[-1.6415504,53.837338],[-1.6415141,53.8373563],[-1.6415646,53.8373906],[-1.6416043,53.8373735],[-1.6416723,53.8374486],[-1.6417503,53.8374252],[-1.6416485,53.8373015]]]],"type":"MultiPolygon"},"properties":{"building":"retail","name":"Spider Pie","osm_way_id":"385277884","other_tags":{"addr:city":"Leeds","addr:housenumber":"25","addr:postcode":"LS18 5LJ","addr:street":"Town Street","addr:suburb":"Horsforth","opening_hours":"Mo 09:00-13:00; Tu-Sa 09:00-17:00; Su Closed"},"shop":"vacant"},"type":"Feature"}
-],"type":"FeatureCollection"}
+],"type":"FeatureCollection","last_updated":"2023-02-05T21:21:25Z"}

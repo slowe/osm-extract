@@ -176,4 +176,4 @@
 	{"geometry":{"coordinates":[[[[-1.6502353,53.8348919],[-1.6500085,53.8349255],[-1.6499992,53.8349035],[-1.650226,53.8348699],[-1.6502353,53.8348919]]]],"type":"MultiPolygon"},"properties":{"amenity":"parking","osm_way_id":"1091836174","other_tags":{"capacity":"3","parking":"lane"}},"type":"Feature"},
 	{"geometry":{"coordinates":[[[[-1.6501245,53.8345235],[-1.6501705,53.8345302],[-1.6500854,53.8347336],[-1.6500393,53.8347269],[-1.6501245,53.8345235]]]],"type":"MultiPolygon"},"properties":{"amenity":"parking","osm_way_id":"1091836179","other_tags":{"capacity":"4","parking":"lane"}},"type":"Feature"},
 	{"geometry":{"coordinates":[[[[-1.627229,53.8423287],[-1.6273004,53.8422731],[-1.6276825,53.8424439],[-1.6276111,53.8424996],[-1.627229,53.8423287]]]],"type":"MultiPolygon"},"properties":{"amenity":"parking","osm_way_id":"1100933615"},"type":"Feature"}
-],"type":"FeatureCollection"}
+],"type":"FeatureCollection","last_updated":"2023-02-05T21:21:25Z"}

@@ -1,3 +1,3 @@
 {"features":[
 	{"geometry":{"coordinates":[[[[-1.6266044,53.8416278],[-1.6264171,53.8415801],[-1.6263529,53.841668],[-1.6265046,53.8417066],[-1.626524,53.8416801],[-1.6265595,53.8416892],[-1.6266044,53.8416278]]]],"type":"MultiPolygon"},"properties":{"building":"house","office":"therapist","osm_way_id":"563221862","other_tags":{"addr:housename":"The Horsforth Centre, New Foundations House","addr:housenumber":"138","addr:postcode":"LS18 5PX","addr:street":"Low Lane","healthcare":"psychotherapist","phone":"+44 113 258 3399","website":"https://www.thehorsforthcentre.co.uk/"}},"type":"Feature"}
-],"type":"FeatureCollection"}
+],"type":"FeatureCollection","last_updated":"2023-02-05T21:21:25Z"}

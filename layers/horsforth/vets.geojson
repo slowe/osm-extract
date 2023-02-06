@@ -1,4 +1,4 @@
 {"features":[
 	{"geometry":{"coordinates":[-1.6338384,53.8465833],"type":"Point"},"properties":{"amenity":"veterinary","name":"Yorkshire Vets","osm_id":"3898525383","other_tags":{"addr:city":"Leeds","addr:housenumber":"1","addr:postcode":"LS18 5PA","addr:street":"Station Road","addr:suburb":"Horsforth","opening_hours":"Mo-Fr 08:30-10:00, 14:00-18:00; Sa 08:30-11:00; Su Closed","phone":"+44 113 259 1196","website":"https://www.yorkshirevets.co.uk/surgeries/horsforth/"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.6438663,53.8322925],"type":"Point"},"properties":{"amenity":"veterinary","name":"J S Baxter","osm_id":"3916647730","other_tags":{"addr:city":"Horsforth","addr:housenumber":"2","addr:postcode":"LS18 4QE","addr:street":"Rose Avenue","phone":"+44 113 258 3215"}},"type":"Feature"}
-],"type":"FeatureCollection"}
+],"type":"FeatureCollection","last_updated":"2023-02-05T21:21:25Z"}

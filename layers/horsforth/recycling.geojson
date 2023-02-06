@@ -3,4 +3,4 @@
 	{"geometry":{"coordinates":[-1.6445456,53.8343989],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"8572815155","other_tags":{"opening_hours":"24/7","opening_hours:covid19":"same","recycling:glass":"no","recycling:glass_bottles":"yes","recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.6407851,53.8389803],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"9063010262","other_tags":{"recycling:glass":"yes","recycling:glass_bottles":"yes","recycling_type":"container"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.6407387,53.8380496],"type":"Point"},"properties":{"amenity":"recycling","osm_id":"10556611925","other_tags":{"recycling:batteries":"yes","recycling_type":"container"}},"type":"Feature"}
-],"type":"FeatureCollection"}
+],"type":"FeatureCollection","last_updated":"2023-02-05T21:21:25Z"}

@@ -103,7 +103,7 @@ if(-e $latest){
 
 			$geojson = $ldir."$l.geojson";
 
-			saveGeoJSONFeatures($layer,$geojson);
+			saveGeoJSONFeatures($layer,$geojson,$tstamp);
 			print "Remove $layer ";
 			`rm $layer`;
 		}
@@ -124,6 +124,7 @@ sub saveGeoJSONFeatures {
 	
 	my $osm = $_[0];
 	my $ofile = $_[1];
+	my $tstamp = $_[2];
 
 	$bdir = $osm;
 	$bdir =~ s/([^\/]+)$//;
@@ -159,7 +160,7 @@ sub saveGeoJSONFeatures {
 	
 	$txt = $coder->canonical(1)->encode($geojson);
 	$txt =~ s/(\{ ?"geometry":)/\n\t$1/gi;
-	$txt =~ s/(\],"type":"FeatureCollection")/\n$1/;
+	$txt =~ s/(\],"type":"FeatureCollection")/\n$1,"last_updated":"$tstamp"/;
 
 	open(GEO,">",$ofile);
 	print GEO $txt;
