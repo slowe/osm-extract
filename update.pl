@@ -160,7 +160,7 @@ sub saveGeoJSONFeatures {
 	
 	$txt = $coder->canonical(1)->encode($geojson);
 	$txt =~ s/(\{ ?"geometry":)/\n\t$1/gi;
-	$txt =~ s/(\],"type":"FeatureCollection")/\n$1,"last_updated":"$tstamp"/;
+	$txt =~ s/(\],"type":"FeatureCollection")[^\}]*?/\n$1,"last_updated":"$tstamp"/;
 
 	open(GEO,">",$ofile);
 	print GEO $txt;

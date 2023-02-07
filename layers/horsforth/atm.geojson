@@ -4,4 +4,4 @@
 	{"geometry":{"coordinates":[-1.6407344,53.8376399],"type":"Point"},"properties":{"amenity":"atm","osm_id":"5642157015","other_tags":{"cash_in":"yes","check_date":"2021-08-30","operator":"Halifax"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.6387999,53.8391116],"type":"Point"},"properties":{"amenity":"atm","osm_id":"8331307289","other_tags":{"brand":"HSBC UK","brand:wikidata":"Q64767453","cash_in":"no","currency:GBP":"yes","drive_through":"no","operator":"HSBC UK","operator:wikidata":"Q64767453"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.641024,53.8382413],"type":"Point"},"properties":{"amenity":"atm","osm_id":"10556611924","other_tags":{"fee":"no"}},"type":"Feature"}
-],"type":"FeatureCollection","last_updated":"2023-02-05T21:21:25Z"}
+],"type":"FeatureCollection","last_updated":"2023-02-06T21:21:50Z"}
