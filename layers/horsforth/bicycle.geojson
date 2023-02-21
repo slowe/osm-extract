@@ -12,4 +12,4 @@
 	{"geometry":{"coordinates":[[[[-1.6302484,53.8474766],[-1.6302324,53.8474485],[-1.6302654,53.8474419],[-1.6302815,53.84747],[-1.6302484,53.8474766]]]],"type":"MultiPolygon"},"properties":{"amenity":"bicycle_parking","osm_way_id":"896021120","other_tags":{"access":"customers","bicycle_parking":"lockers","capacity":"4","covered":"yes","fee":"yes"}},"type":"Feature"},
 	{"geometry":{"coordinates":[[[[-1.6405139,53.8316493],[-1.6405367,53.8316159],[-1.6405005,53.8316073],[-1.6404777,53.8316407],[-1.6405139,53.8316493]]]],"type":"MultiPolygon"},"properties":{"amenity":"bicycle_parking","osm_way_id":"899166090","other_tags":{"bicycle_parking":"stands","covered":"yes","fee":"no"}},"type":"Feature"},
 	{"geometry":{"coordinates":[[[[-1.6485396,53.8288254],[-1.6485175,53.8287879],[-1.6486154,53.8287678],[-1.6486375,53.8288053],[-1.6485396,53.8288254]]]],"type":"MultiPolygon"},"properties":{"amenity":"bicycle_parking","building":"yes","osm_way_id":"902767527","other_tags":{"access":"private","bicycle_parking":"shed","covered":"yes"}},"type":"Feature"}
-],"type":"FeatureCollection","last_updated":"2023-02-13T21:21:25Z"}
+],"type":"FeatureCollection"}

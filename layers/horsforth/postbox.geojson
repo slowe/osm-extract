@@ -26,4 +26,4 @@
 	{"geometry":{"coordinates":[-1.6396719,53.8490034],"type":"Point"},"properties":{"amenity":"post_box","osm_id":"2206861108","other_tags":{"operator":"Royal Mail","post_box:type":"wall"},"ref":"LS18 116"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.655412,53.8494214],"type":"Point"},"properties":{"amenity":"post_box","osm_id":"2206861109","other_tags":{"operator":"Royal Mail","post_box:type":"wall"},"ref":"LS18 523"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.6476197,53.8481999],"type":"Point"},"properties":{"amenity":"post_box","osm_id":"8651916543"},"type":"Feature"}
-],"type":"FeatureCollection","last_updated":"2023-02-13T21:21:25Z"}
+],"type":"FeatureCollection"}
