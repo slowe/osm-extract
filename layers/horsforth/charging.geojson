@@ -1,3 +1,4 @@
 {"features":[
-	{"geometry":{"coordinates":[-1.6417472,53.8364399],"type":"Point"},"properties":{"amenity":"charging_station","osm_id":"8365687073","other_tags":{"capacity":"3","fee":"no","operator":"Pod Point","website":"https://pod-point.com/"}},"type":"Feature"}
+	{"geometry":{"coordinates":[-1.6417472,53.8364399],"type":"Point"},"properties":{"amenity":"charging_station","osm_id":"8365687073","other_tags":{"capacity":"3","fee":"no","operator":"Pod Point","website":"https://pod-point.com/"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.6439555,53.8363176],"type":"Point"},"properties":{"amenity":"charging_station","osm_id":"10697253716","other_tags":{"access":"yes","brand":"engie","capacity":"2","fee":"yes"}},"type":"Feature"}
 ],"type":"FeatureCollection"}
