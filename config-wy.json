@@ -24,13 +24,13 @@
 					"keep": "amenity=bank"
 				},
 				"craft": {
-					"keep": "craft="
+					"keep": "craft= or shop=craft"
 				},
 				"pub": {
 					"keep": "amenity=bar or amenity=pub"
 				},
 				"food": {
-					"keep": "amenity=fast_food or amenity=restaurant or amenity=cafe"
+					"keep": "amenity=fast_food or amenity=restaurant or amenity=cafe or shop=deli"
 				},
 				"car": {
 					"keep": "shop=car =car_parts =car_repair"
@@ -83,7 +83,7 @@
 				},
 				"shop": {
 					"keep": "shop=",
-					"drop": "shop=hairdresser =travel_agency =beauty =clothes =charity =bakery =car =car_parts =car_repair =vacant healthcare=pharmacy entrance=main"
+					"drop": "shop=hairdresser =travel_agency =beauty =craft =clothes =charity =bakery =car =car_parts =car_repair =deli =vacant healthcare=pharmacy entrance=main"
 				},
 				"toilets": {
 					"keep": "amenity=toilets toilets=yes",
