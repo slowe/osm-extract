@@ -90,6 +90,7 @@ if(-e $latest){
 			if($config->{'areas'}{$a}{'layers'}{$l}{'keep'}){ $modify .= " --keep=\"$config->{'areas'}{$a}{'layers'}{$l}{'keep'}\""; }
 			if($config->{'areas'}{$a}{'layers'}{$l}{'drop'}){ $modify .= " --drop=\"$config->{'areas'}{$a}{'layers'}{$l}{'drop'}\""; }
 
+			print "osmfilter $arealatest $modify -o=$layer\n";
 			`osmfilter $arealatest $modify -o=$layer`;
 			$ldir = $basedir."layers/";
 			if(!-d $ldir){

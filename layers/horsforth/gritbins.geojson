@@ -1,4 +1,5 @@
 {"features":[
 	{"geometry":{"coordinates":[-1.6395414,53.8358542],"type":"Point"},"properties":{"amenity":"grit_bin","osm_id":"8303600938"},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.6400195,53.8292372],"type":"Point"},"properties":{"amenity":"grit_bin","osm_id":"8354707800"},"type":"Feature"}
+	{"geometry":{"coordinates":[-1.6400195,53.8292372],"type":"Point"},"properties":{"amenity":"grit_bin","osm_id":"8354707800"},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.6428194,53.8367096],"type":"Point"},"properties":{"amenity":"grit_bin","osm_id":"10746310513","other_tags":{"content":"salt/grit"}},"type":"Feature"}
 ],"type":"FeatureCollection"}
