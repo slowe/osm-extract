@@ -6,7 +6,7 @@
 	"areas": {
 		"horsforth": {
 			"name": "Horsforth",
-			"poly": "area-horsforth.poly",
+			"poly": "area-horsforth-buffered.poly",
 			"layers": {
 				"atm": {
 					"keep": "amenity=atm"
