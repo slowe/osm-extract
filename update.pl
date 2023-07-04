@@ -4,12 +4,11 @@ use POSIX qw(strftime);
 use JSON::XS;
 use Data::Dumper;
 
-
 use Cwd qw(abs_path);
 
-# Get the real base directory for this script
-my $basedir = "./";
-if(abs_path($0) =~ /^(.*\/)[^\/]*/){ $basedir = $1; }
+my $basedir = $0;
+$basedir =~ s/[^\/]*$//g;
+if(!$basedir){ $basedir = "./"; }
 
 
 $coder = JSON::XS->new->ascii->allow_nonref;
@@ -29,6 +28,9 @@ if(!-d $tdir){
 	`mkdir $tdir`;
 }
 
+
+
+
 $latest = $url;
 $latest =~ s/^.*\/([^\/]+)(\.osm\.pbf)$/$1$2/g;
 $latest = $tdir.$latest;
@@ -36,9 +38,23 @@ $old = $latest;
 $old =~ s/\.osm/-old\.osm/;
 
 
+if(-e $latest){
+	$tstamp = `osmconvert $latest --out-timestamp`;
+	$tstamp =~ s/[\n\r]//g;
+}else{
+	$tstamp = "2000-01-01";
+}
 
+$yesterday = strftime("%F",gmtime(time-86400));
 
-if(!-e $latest){
+if(!-e $latest || $tstamp lt $yesterday){
+
+	if(-e $latest){
+		# Move the file
+		print "Move $latest > $old\n";
+		`mv $latest $old`;
+	}
+
 	print "Download file from $url to $latest\n";
 	`wget -q --no-check-certificate -O $latest "$url"`;
 }
@@ -49,23 +65,18 @@ if(-e $latest){
 	$tstamp =~ s/[\n\r]//g;
 	print "PBF file last updated: $tstamp\n";
 
-
-	# Move the file
-	print "Move $latest > $old\n";
-	`mv $latest $old`;
-	# Update file
-	print "Updating...\n";
-	`osmupdate --tempfiles=$tdir --base-url=$updateurl --keep-tempfiles $old $latest`;
-
-	if(!-e $latest){
-		`mv $old $latest`;
-	}
+#	# Update file
+#	print "Updating...\n";
+#	`osmupdate --tempfiles=$tdir --base-url=$updateurl --keep-tempfiles $old $latest`;
+#
+#	if(!-e $latest){
+#		`mv $old $latest`;
+#	}
 
 	if(-e $old){
 		print "Remove old version from $old\n";
 		`rm $old`;
 	}
-
 
 	foreach $a (keys(%{$config->{'areas'}})){
 
@@ -76,7 +87,7 @@ if(-e $latest){
 		}
 		$arealatest = $tdir.$a."-latest.o5m";
 		# Make area extract
-		print "OSM convert $arealatest.\n";
+		print "osmconvert $latest -B=$basedir$config->{'areas'}{$a}{'poly'} -o=$arealatest.\n";
 		`osmconvert $latest -B=$basedir$config->{'areas'}{$a}{'poly'} -o=$arealatest`;
 		
 
