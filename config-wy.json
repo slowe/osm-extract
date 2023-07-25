@@ -48,7 +48,7 @@
 					"keep": "amenity=childcare"
 				},
 				"clothing": {
-					"keep": "shop=clothes"
+					"keep": "shop=clothes =shoes"
 				},
 				"education": {
 					"keep": "amenity=school =college =university",
