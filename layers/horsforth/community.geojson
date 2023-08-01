@@ -1,0 +1,4 @@
+{"features":[
+	{"geometry":{"coordinates":[-1.643135,53.8353229],"type":"Point"},"properties":{"name":"Horsforth Arts Society","osm_id":"11065098277","other_tags":{"addr:city":"Leeds","addr:housenumber":"15","addr:postcode":"LS18 4RF","addr:street":"Back Lane","addr:suburb":"Horsforth","association":"cultural","office":"association","opening_hours":"Mo 10:00-12:00; Tu 13:30-15:30; We 19:30-21:00; Th 13:30-15:30","phone":"+44 113 258 8477","website":"https://horsforthartsociety.wordpress.com/"}},"type":"Feature"},
+	{"geometry":{"coordinates":[[[[-1.6309248,53.825645],[-1.6306966,53.8255458],[-1.6306448,53.8255888],[-1.6308744,53.8256855],[-1.6309248,53.825645]]]],"type":"MultiPolygon"},"properties":{"amenity":"activity_centre","building":"yes","name":"Hunters Greave Activity Centre","osm_way_id":"851291894","other_tags":{"club":"scout","email":"huntersgreave@sky.com","postal_code":"LS13 1EQ"}},"type":"Feature"}
+],"type":"FeatureCollection"}
