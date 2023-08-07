@@ -53,6 +53,9 @@
 				"community": {
 					"keep": "association=cultural or association=cooperative or association=sport or club="
 				},
+				"defibrillators": {
+					"keep": "emergency=defibrillator"
+				},
 				"education": {
 					"keep": "amenity=school =college =university",
 					"drop": "barrier=gate =bollard entrance=yes"
@@ -70,7 +73,7 @@
 					"keep": "office=lawyer or office=accountant or office=tax_advisor"
 				},
 				"medical": {
-					"keep": "amenity=clinic or amenity=doctors or amenity=dentist or amenity=pharmacy or healthcare=pharmacy or emergency=defibrillator"
+					"keep": "amenity=clinic or amenity=doctors or amenity=dentist or amenity=pharmacy or healthcare=pharmacy"
 				},
 				"parking": {
 					"keep": "amenity=parking"

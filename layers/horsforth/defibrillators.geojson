@@ -1,0 +1,9 @@
+{"features":[
+	{"geometry":{"coordinates":[-1.6408139,53.8385302],"type":"Point"},"properties":{"osm_id":"4403460184","other_tags":{"access":"code","emergency":"defibrillator","indoor":"no"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.6423655,53.8323403],"type":"Point"},"properties":{"osm_id":"6010343288","other_tags":{"defibrillator:location":"External wall facing New Road Side, by external seating","emergency":"defibrillator","indoor":"no"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.6406241,53.8369918],"type":"Point"},"properties":{"osm_id":"6010343289","other_tags":{"defibrillator:location":"External wall between gate and disabled parking spaces","emergency":"defibrillator"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.6379054,53.8397971],"type":"Point"},"properties":{"osm_id":"6010343290","other_tags":{"defibrillator:location":"External wall between disabled access ramp and main entrance to Brownlee Stone Centre","emergency":"defibrillator","indoor":"no"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.630881,53.8469548],"type":"Point"},"properties":{"osm_id":"7126021312","other_tags":{"emergency":"defibrillator","indoor":"no","location":"outside Mousi Browns hairdressers, opposite southern entrance to Horsforth Station on Station Road , Horsforth"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.6373467,53.8469158],"type":"Point"},"properties":{"osm_id":"8458633715","other_tags":{"emergency":"defibrillator"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.6627637,53.8312366],"type":"Point"},"properties":{"osm_id":"10181047951","other_tags":{"defibrillator:location":"Outside wall, beside entrance to pavillion","emergency":"defibrillator","indoor":"no"}},"type":"Feature"}
+],"type":"FeatureCollection"}
