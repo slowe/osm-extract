@@ -1,5 +1,5 @@
 {"features":[
 	{"geometry":{"coordinates":[-1.6417472,53.8364399],"type":"Point"},"properties":{"amenity":"charging_station","osm_id":"8365687073","other_tags":{"access":"yes","capacity":"3","charge":"0.28 / kWh","fee":"yes","operator":"Pod Point","operator:wikidata":"Q42888154","website":"https://pod-point.com/"}},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.6418856,53.8386145],"type":"Point"},"properties":{"amenity":"charging_station","osm_id":"9062971873","other_tags":{"brand":"GeniePoint","capacity":"2","charge":"0.75 GBP/kWh","fee":"yes","operator":"GeniePoint","operator:wikidata":"Q111363966","phone":"+44 203 598 4087","website":"https://www.geniepoint.co.uk/"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.6418856,53.8386145],"type":"Point"},"properties":{"amenity":"charging_station","osm_id":"9062971873","other_tags":{"brand":"GeniePoint","capacity":"2","charge":"0.75 GBP/kWh","fee":"yes","operator":"GeniePoint","operator:wikidata":"Q111363966","phone":"+44 20 3598 4087","website":"https://www.geniepoint.co.uk/"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.6439555,53.8363176],"type":"Point"},"properties":{"amenity":"charging_station","osm_id":"10697253716","other_tags":{"access":"yes","brand":"engie","capacity":"2","fee":"yes","operator":"engie"}},"type":"Feature"}
 ],"type":"FeatureCollection"}
