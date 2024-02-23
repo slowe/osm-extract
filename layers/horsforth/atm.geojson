@@ -1,8 +1,8 @@
 {"features":[
-	{"geometry":{"coordinates":[-1.6331322,53.846688],"type":"Point"},"properties":{"amenity":"atm","osm_id":"1938631973","other_tags":{"cash_in":"no","fee":"no","operator":"Tesco Bank"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.6331322,53.846688],"type":"Point"},"properties":{"amenity":"atm","osm_id":"1938631973","other_tags":{"cash_in":"no","fee":"no","indoor":"no","operator":"Tesco Bank"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.6292684,53.8473624],"type":"Point"},"properties":{"amenity":"atm","osm_id":"3848979874","other_tags":{"cash_in":"no","check_date":"2023-06-30","fee":"yes","operator":"Cash Zone"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.6403145,53.8319064],"type":"Point"},"properties":{"amenity":"atm","osm_id":"3904815772","other_tags":{"drive_through":"no","fee":"no","opening_hours":"24/7","operator":"Tesco Bank"}},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.6407344,53.8376399],"type":"Point"},"properties":{"amenity":"atm","osm_id":"5642157015","other_tags":{"brand":"Halifax","brand:wikidata":"Q3310164","cash_in":"yes","check_date":"2021-08-30","fee":"no","operator":"Halifax","operator:wikidata":"Q3310164"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.6407344,53.8376399],"type":"Point"},"properties":{"amenity":"atm","osm_id":"5642157015","other_tags":{"brand":"Halifax","brand:wikidata":"Q3310164","cash_in":"yes","check_date":"2024-02-19","fee":"no","operator":"Halifax","operator:wikidata":"Q3310164"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.641024,53.8382413],"type":"Point"},"properties":{"amenity":"atm","osm_id":"10556611924","other_tags":{"fee":"no"}},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.6419198,53.8370228],"type":"Point"},"properties":{"amenity":"atm","osm_id":"10683617175","other_tags":{"brand":"NoteMachine","brand:wikidata":"Q104368525","cash_in":"no","operator":"NoteMachine","operator:short":"NMATM","operator:wikidata":"Q104368525"}},"type":"Feature"}
+	{"geometry":{"coordinates":[-1.6419198,53.8370228],"type":"Point"},"properties":{"amenity":"atm","osm_id":"10683617175","other_tags":{"brand":"NoteMachine","brand:wikidata":"Q104368525","cash_in":"no","indoor":"no","operator":"NoteMachine","operator:short":"NMATM","operator:wikidata":"Q104368525"}},"type":"Feature"}
 ],"type":"FeatureCollection"}
