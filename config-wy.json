@@ -1,6 +1,6 @@
 {
 	"area": "great-britain/england/west-yorkshire",
-	"pbf": "https://download.geofabrik.de/europe/great-britain/england/west-yorkshire-latest.osm.pbf",
+	"pbf": "http://download.geofabrik.de/europe/united-kingdom/england/west-yorkshire-latest.osm.pbf",
 	"updates": "download.geofabrik.de/europe/great-britain/england/west-yorkshire-updates",
 	"temp": "temp/",
 	"areas": {
