@@ -1,15 +1,18 @@
 #!/usr/bin/perl
 
+use strict;
+use warnings;
 use POSIX qw(strftime);
 use JSON::XS;
 use Data::Dumper;
 
 use Cwd qw(abs_path);
 
-my $basedir = $0;
+my ($basedir,$coder,$config,$area,$name,$url,$updateurl,$tdir,$latest,$old,$tstamp,$yesterday,$arealatest,$l,$layer,$modify,$ldir,$geojson,@addresses);
+
+$basedir = $0;
 $basedir =~ s/[^\/]*$//g;
 if(!$basedir){ $basedir = "./"; }
-
 
 $coder = JSON::XS->new->ascii->allow_nonref;
 
@@ -81,7 +84,8 @@ if(-e $latest){
 	foreach $a (keys(%{$config->{'areas'}})){
 
 		msg("Area <yellow>$a<none>:\n");
-				
+		@addresses = ();
+
 		if(!-e $basedir.$config->{'areas'}{$a}{'poly'}){
 			error("No polygon file $config->{'areas'}{$a}{'poly'}\n");
 		}
@@ -118,6 +122,7 @@ if(-e $latest){
 			#if($layer =~ /craft/){
 			saveGeoJSONFeatures($layer,$geojson,$tstamp,$config->{'areas'}{$a}{'layers'}{$l});
 			#}
+
 			if(-e $layer){
 				msg("\t\tRemove $layer\n");
 				`rm $layer`;
@@ -133,7 +138,7 @@ if(-e $latest){
 sub checkFeature {
 	my $f = shift;
 	my $l = shift;
-	my @keep,$key,$value,$oldkey,$b,$i,$ok,$str;
+	my (@keep,$key,$value,$oldkey,$b,$i,$ok,$str);
 
 	$str = $l->{'keep'};
 	$str =~ s/ or / /g;
@@ -176,12 +181,12 @@ sub checkFeature {
 
 sub saveGeoJSONFeatures {
 
-	my (@types,@features,$t,@lines,$perl_scalar,$n,$i,$geojson,$txt,$bdir,$ini);
+	my (@types,@features,$t,@lines,$perl_scalar,$n,$i,$geojson,$txt,$bdir,$ini,$osm,$ofile,$tstamp,$props,$gfile);
 	
-	my $osm = shift;
-	my $ofile = shift;
-	my $tstamp = shift;
-	my $props = shift;
+	$osm = shift;
+	$ofile = shift;
+	$tstamp = shift;
+	$props = shift;
 
 	$bdir = $osm;
 	$bdir =~ s/([^\/]+)$//;
@@ -216,7 +221,7 @@ sub saveGeoJSONFeatures {
 	}
 	$n = @features;
 	$geojson = {'type'=>'FeatureCollection','features'=>\@features};
-	
+
 	$txt = $coder->canonical(1)->encode($geojson);
 	$txt =~ s/(\{ ?"geometry":)/\n\t$1/gi;
 	$txt =~ s/(\],"type":"FeatureCollection")[^\}]*?\}/\n$1\}/;
@@ -250,8 +255,6 @@ sub loadConf {
 	if($@){ error("Failed to load JSON from $file: $str");	}
 	return $conf;
 }
-
-
 
 sub msg {
 	my $str = $_[0];
@@ -289,12 +292,9 @@ sub warning {
 }
 
 
-
-
-
 sub tidyTemporaryFiles {
 	my $tstamp = substr($_[0],0,10);
-	my ($dh,$filename,@files,$i,@lines,$line);
+	my ($dh,$filename,@files,$i,@lines,$line,$fh);
 
 	msg("Tidy <yellow>$tstamp<none>\n");
 	
