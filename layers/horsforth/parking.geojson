@@ -13,7 +13,7 @@
 	{"geometry":{"coordinates":[-1.6247864,53.8366314],"type":"Point"},"properties":{"amenity":"parking","osm_id":"8312143586","other_tags":{"parking":"surface"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.6223412,53.8399014],"type":"Point"},"properties":{"amenity":"parking","osm_id":"8312143591","other_tags":{"parking":"surface"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.6257995,53.8413563],"type":"Point"},"properties":{"amenity":"parking","osm_id":"8312143593","other_tags":{"parking":"surface"}},"type":"Feature"},
-	{"geometry":{"coordinates":[-1.6252534,53.8411608],"type":"Point"},"properties":{"amenity":"parking","osm_id":"8312143600","other_tags":{"parking":"surface"}},"type":"Feature"},
+	{"geometry":{"coordinates":[-1.6252534,53.8411608],"type":"Point"},"properties":{"amenity":"parking","osm_id":"8312143600","other_tags":{"access":"private","parking":"surface"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.6288869,53.8489271],"type":"Point"},"properties":{"amenity":"parking","osm_id":"8312151920","other_tags":{"parking":"surface"}},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.6467189,53.8343688],"type":"Point"},"properties":{"amenity":"parking","osm_id":"8322171951"},"type":"Feature"},
 	{"geometry":{"coordinates":[-1.6473648,53.8345275],"type":"Point"},"properties":{"amenity":"parking","osm_id":"8322171952"},"type":"Feature"},
