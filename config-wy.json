@@ -73,7 +73,7 @@
 					"keep": "office=lawyer or office=accountant or office=tax_advisor"
 				},
 				"medical": {
-					"keep": "amenity=clinic or amenity=doctors or amenity=dentist or amenity=pharmacy or healthcare=pharmacy"
+					"keep": "amenity=clinic or amenity=doctors or amenity=dentist or amenity=pharmacy or healthcare=pharmacy or shop=optician"
 				},
 				"parking": {
 					"keep": "amenity=parking"
@@ -89,7 +89,7 @@
 				},
 				"shop": {
 					"keep": "shop=",
-					"drop": "shop=hairdresser =travel_agency =beauty =craft =clothes =charity =bakery =car =car_parts =car_repair =deli =vacant =ticket healthcare=pharmacy entrance=main"
+					"drop": "shop=hairdresser =travel_agency =beauty =craft =clothes =charity =bakery =car =car_parts =car_repair =deli =optician =vacant =ticket healthcare=pharmacy entrance=main"
 				},
 				"sport": {
 					"keep": "sport= and name=",
